@@ -16,9 +16,8 @@ body {
 .container {
     display: grid;
     gap: 1rem;
-    /* grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr; */
     margin: 10%;
+    transition: 500ms;
 }
 
 .testimony-container {
@@ -26,9 +25,16 @@ body {
     border-radius: 10px;
 }
 
-.testimony-container img {
+.profilepic {
     border-radius: 100%;
     width: 35px;
+}
+
+.bg-pattern-quotation {
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 32%;
+    width: 5.5rem;
 }
 
 .testimony-userprofile {
@@ -88,6 +94,10 @@ body {
 
 /* Small devices like portrait tablets and large phones with 600px and above. */
 @media only screen and (min-width: 600px) {
+
+    .bg-pattern-quotation {
+        display: none;
+    }
 
     .container {
         grid-template-columns: 1fr 1fr;
@@ -157,6 +167,10 @@ body {
 
 /* Extra large devices like large laptops and desktops, 1200px and above. */
 @media only screen and (min-width: 1200px) {
+
+    .bg-pattern-quotation {
+        display: block;
+    }
 
     .container {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 250px 50px 200px;
